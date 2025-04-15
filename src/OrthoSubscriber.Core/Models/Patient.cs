@@ -7,12 +7,9 @@ namespace OrthoSubscriber.Core.Models {
         public string FristName { get; set; }
         public string LastName { get; set; }
         public string MiddleName { get; set; } = string.Empty;
-        public string Email { get; set; }
-        public string Phone {get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string State { get; set; } // Use an Enum
+        public PatientAddress Address { get; set; }
         public GenderIdentification Gender { get; set; }
-        public PatientPolicy Policy { get; set; } = new PatientPolicy();
+        public PatientProfile Profile { get; set; } = new PatientProfile();
+        public PatientInsurance Insurance { get; set; }
     }
 }
