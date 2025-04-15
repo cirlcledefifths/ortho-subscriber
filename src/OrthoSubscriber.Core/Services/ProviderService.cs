@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using OrthoSubscriber.Core.Models;
+using OrthoSubscriber.Core.Models.Provider;
 using OrthoSubscriber.Core.Interfaces;
 
 namespace OrthoSubscriber.Core.Services {
@@ -10,7 +11,7 @@ namespace OrthoSubscriber.Core.Services {
 
         public ProviderService() {}
 
-        public async Task<Provider> GetProvider(Guid id) {
+        public async Task<PatientProvider> GetProvider(Guid id) {
             return await _providerRepository.GetProvider(id);
         }
     }

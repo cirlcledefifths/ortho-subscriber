@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using OrthoSubscriber.Core.Models;
+using OrthoSubscriber.Core.Models.Patient;
 using OrthoSubscriber.Core.Interfaces;
 
 namespace OrthoSubscriber.Data.Repositories {

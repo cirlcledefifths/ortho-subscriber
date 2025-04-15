@@ -1,4 +1,4 @@
-namespace OrthoSubscriber.Core.Models {
+namespace OrthoSubscriber.Core.Models.Patient {
     public enum GenderIdentification {
         Male,
         Female,

@@ -1,4 +1,6 @@
-namespace OrthoSubscriber.Core.Models {
+using OrthoSubscriber.Core.Models;
+
+namespace OrthoSubscriber.Core.Models.Patient {
     public class PatientPolicy {
         public PolicyType Type { get; set; } = PolicyType.Basic;
         public Guid Id { get; set; }

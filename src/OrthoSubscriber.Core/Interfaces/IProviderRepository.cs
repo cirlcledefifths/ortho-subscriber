@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
-using OrthoSubscriber.Core.Models;
+using OrthoSubscriber.Core.Models.Provider;
 
 namespace OrthoSubscriber.Core.Interfaces {
     public interface IProviderRepository {
-        Task<Provider> GetProvider(Guid id);
+        Task<PatientProvider> GetProvider(Guid id);
     }
 }

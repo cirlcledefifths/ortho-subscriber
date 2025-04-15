@@ -1,7 +1,6 @@
-using System;
-using System.Collections.Generic;
+using OrthoSubscriber.Core.Models;
 
-namespace OrthoSubscriber.Core.Models {
+namespace OrthoSubscriber.Core.Models.Patient {
     public class Patient {
         public Guid Id {get; set; }
         public string FristName { get; set; }

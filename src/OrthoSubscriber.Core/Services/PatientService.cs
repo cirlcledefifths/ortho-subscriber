@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using OrthoSubscriber.Core.Interfaces;
 using OrthoSubscriber.Core.Models;
+using OrthoSubscriber.Core.Models.Patient;
 
 namespace OrthoSubscriber.Core.Services {
     public class PatientService {

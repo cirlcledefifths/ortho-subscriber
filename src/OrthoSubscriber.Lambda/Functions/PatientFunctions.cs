@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using OrthoSubscriber.Startup;
 using OrthoSubscriber.Core.Services;
+using OrthoSubscriber.Core.Models.Patient;
 using OrthoSubscriber.Core.Models;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
