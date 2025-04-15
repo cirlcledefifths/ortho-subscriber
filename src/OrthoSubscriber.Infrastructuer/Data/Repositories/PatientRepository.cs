@@ -16,5 +16,17 @@ namespace OrthoSubscriber.Infrastructure.Data.Repositories {
 
             return patient;
         }
+
+        public async Task<Patient> SavePatient(Patient patient) {
+            return patient;
+        }
+
+        public async Task<PatientPolicy> SubscribePatient(Patient patient) {
+            return new PatientPolicy();
+        }
+
+        public async Task<bool> UnsubscribePatient(Guid Id) {
+            return true;
+        }
     }
 }

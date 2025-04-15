@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using OrthoSubscriber.Core.Models;
 
 namespace OrthoSubscriber.Core.Models {
     public class Patient {
@@ -13,6 +12,7 @@ namespace OrthoSubscriber.Core.Models {
         public string Address { get; set; }
         public string City { get; set; }
         public string State { get; set; } // Use an Enum
-        public PatientPolicy Policy { get; set; }= new PatientPolicy();
+        public GenderIdentification Gender { get; set; }
+        public PatientPolicy Policy { get; set; } = new PatientPolicy();
     }
 }

@@ -4,9 +4,10 @@ using System.Threading.Tasks;
 using OrthoSubscriber.Core.Models;
 
 namespace OrthoSubscriber.Core.Interfaces {
-    public interface IPolicyRepository {
+    public interface IPatientPolicyRepository {
         Task<PatientPolicy> GetUserPolicy(Guid UserId);
-        Task<PatientPolicy> GetUserPolicySubscriptionDate(Guid UserId);
+        Task<DateTime> GetUserPolicySubscriptionDate(Guid UserId);
         Task<bool> IsUserPolicyActive(Guid UserId);
+        Task<PatientPolicy> DeActivatePolicy(Guid UserId);
     }
 }
