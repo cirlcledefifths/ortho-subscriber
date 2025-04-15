@@ -5,9 +5,9 @@ using OrthoSubscriber.Core.Models.Patient;
 
 namespace OrthoSubscriber.Core.Interfaces {
     public interface IPatientRepository {
-        Task<Patient> GetPatient(Guid Id);
-        Task<Patient> SavePatient(Patient patient);
-        Task<PatientPolicy> SubscribePatient(Patient patient);
+        Task<PatientData> GetPatient(Guid Id);
+        Task<PatientData> SavePatient(PatientData patient);
+        Task<PatientPolicy> SubscribePatient(PatientData patient);
         Task<bool> UnsubscribePatient(Guid Id);
     }
 }

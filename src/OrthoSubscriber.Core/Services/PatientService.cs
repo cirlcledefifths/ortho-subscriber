@@ -13,7 +13,7 @@ namespace OrthoSubscriber.Core.Services {
             _patientRepository = patientRepository;
         }
 
-        public async Task<Patient> GetPatient(Guid id) {
+        public async Task<PatientData> GetPatient(Guid id) {
             return await _patientRepository.GetPatient(id);
         }
     }

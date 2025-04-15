@@ -7,10 +7,10 @@ namespace OrthoSubscriber.Infrastructure.Data.Entities.Patient {
 
     public class PatientEntity {
         [DynamoDBHashKey]
-        public Guid Id {get; set; }
+        public string Id {get; set; }
         
         [DynamoDBProperty]
-        public string FristName { get; set; }
+        public string FirstName { get; set; }
 
         [DynamoDBProperty]
         public string LastName { get; set; }
